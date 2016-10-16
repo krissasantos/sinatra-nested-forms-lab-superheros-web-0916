@@ -1,3 +1,37 @@
 
 
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Teams</title>
+</head>
+<body>
 
+<h1><%= @team.name %></h1>
+    <p>Team Motto: <%=@team.motto%></p>
+    
+  <% @heroes.each do |hero| %>
+  <p>Hero Name: <%=hero.name%></p>
+  <p>Hero Power: <%=hero.power%></p>
+  <p>Hero Biography: <%=hero.bio%></p>
+  <%end%>
+
+</body>
+</html>
+
+
+<!-- <input id="ship_name_1" type="text" name="pirate[ships][][name]" >
+ -->
+<!-- 
+ Power: <input id='member1_power' type='text' name="team[members][][power]">
+ Bio: <input id='member1_bio' type='text' name="team[members][][bio]">
+ 
+ Name: <input id='member2_name'type='text' name="team[members][][name]">
+ Power: <input id='member2_power' type='text' name="team[members][][power]">
+ Bio: <input id='member2_bio' type='text' name="team[members][][bio]">
+ 
+ Name: <input id='member3_name'type='text' name="team[members][][name]">
+ Power: <input id='member3_power' type='text' name="team[members][][power]">
+ Bio: <input id='member3_bio' type='text' name="team[members][][bio]">
+ -->
