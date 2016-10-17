@@ -2,10 +2,10 @@ class Team
   attr_accessor :name, :motto
   @@all = []
 
-  def initialize(params)
+  def initialize(team)
 
-    @name = params[:name]#params[:team][:name] #params[team][name]
-    @motto = params[:motto]#params[:team][:motto] #params[team][name]
+    @name = team[:name]#params[:team][:name] #params[team][name]
+    @motto = team[:motto]#params[:team][:motto] #params[team][name]
     @@all << self
   end
 
